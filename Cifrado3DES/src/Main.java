@@ -74,6 +74,15 @@ public class Main {
 
 
     /**
+     *
+     *
+     */
+    private static void opcion2(Scanner sc){
+
+    }
+
+
+    /**
      * Menu de la app
      *
      * @param sc
@@ -85,6 +94,8 @@ public class Main {
         do {
             System.out.println("Elige una opcion \n" +
                     "1 -> Generar Clave \n" +
+                    "2 -> Encriptar \n" +
+                    "3 -> Desencriptar \n" +
                     "0 -> Salir");
             String input = sc.nextLine();
             try {
@@ -100,6 +111,11 @@ public class Main {
                 case 1:
                     opcion1(sc, eleccionTipoClave(sc));
                     break;
+                case 2:
+                    //opcion2();
+                    break;
+                case 3:
+                    //opcion3();
             }
         } while (eleccion != 0);
 
